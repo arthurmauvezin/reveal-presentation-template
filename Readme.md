@@ -1,3 +1,29 @@
+# Reveal Presentation Template
+
+This a template project allowing you to start creating presentation content quicker with preconfigured Reveal.js project. 
+
+## Setup
+* Go to [repo main page](https://github.com/arthurmauvezin/reveal-presentation-template)
+* Click on `Use this template` button 
+* On creation page, fill repository name and description and click on `Create repository from template` button
+> Remember to put presentation link into Description field.
+> For example, this repository description should contains URL https://arthurmauvezin.github.io/reveal-presentation-template
+* In you new repository, replace all replace strings with your project values
+```bash
+sed -i 's/REPLACE_TITLE/<presentation_title>/g' index.html Readme.md slides/introduction.md
+sed -i 's/REPLACE_SUBTITLE/<presentation_subtitle>/g' index.html Readme.md slides/introduction.md
+sed -i 's/REPLACE_GITHUB_ACCOUNT/<github_account>/g' index.html Readme.md slides/introduction.md
+sed -i 's/REPLACE_GITHUB_REPO_NAME/<github_repo_name>/g' index.html Readme.md slides/introduction.md
+# Examples
+sed -i 's/REPLACE_TITLE/DevOps/g' index.html Readme.md slides/introduction.md
+sed -i 's/REPLACE_SUBTITLE/In a nutshell/g' index.html Readme.md slides/introduction.md
+sed -i 's/REPLACE_GITHUB_ACCOUNT/arthurmauvezin/g' index.html Readme.md slides/introduction.md
+sed -i 's/REPLACE_GITHUB_REPO_NAME/devops-course/g' index.html Readme.md slides/introduction.md
+```
+* Go to your repo settings and enable GitHub Pages
+* Check that your description contains your GitHub Page URL
+* Delete this line and all lines above to get a clean Readme.md and commit and push your repository
+
 # REPLACE_TITLE course
 
 This repo contains a reveal.js presentation about REPLACE_TITLE.
@@ -38,5 +64,7 @@ Options | Background graphics
 * Click on save
 
 ## Edit this course
-For any question about Reveal.js usage, read [Reveal Documentation](reveal-documentation.md)
+> For any question about Reveal.js usage, read [Reveal Documentation](reveal-documentation.md)
+
+Feel free to submit as many pull request as you wish !
 
